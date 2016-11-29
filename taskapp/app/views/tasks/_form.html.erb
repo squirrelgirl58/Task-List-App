@@ -32,6 +32,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :is_private %>
+    <%= f.check_box :is_private %>
+  </div>
+
+  <div class="field">
     <%= f.label :task_list_id %>
     <%= f.collection_select :task_list_id, TaskList.all, :id, :name, prompt: "Please select a list.." %>
   </div>
