@@ -15,7 +15,7 @@
   </thead>
 
   <tbody>
-    <% @tasks.pending.each do |task| %>
+    <% @pending_tasks.each do |task| %>
       <tr>
         <td><%= task.title %></td>
         <td><%= task.priority %></td>
@@ -45,7 +45,7 @@
   </thead>
 
   <tbody>
-    <% @tasks.completed.first(5).each do |task| %>
+    <% @completed_tasks.first(5).each do |task| %>
       <tr>
         <td><%= task.title %></td>
         <td><%= task.priority %></td>
